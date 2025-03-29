@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Todo app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Todo List</h1>
+    <input type="text" id="todo-input" placeholder="Enter todo">
+    <button onclick="addTodo()">追加</button>
+    <ul id="todo-list"></ul>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
