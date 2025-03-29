@@ -1,13 +1,17 @@
 from flask import Flask, request, jsonify, render_template
 import pymysql
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 
 DB_CONFIG = {
-    'host': 'localhost',
-    'user': 'todo_user',
-    'password': 'medialab',
-    'database': 'todo_app',
+    'host': os.getenv('DB_HOST'),
+    'user': os.getenv('DB_USER'),
+    'password': os.getenv('DB_PASSWORD'),
+    'database': os.getenv('DB_NAME'),
     'charset': 'utf8mb4',
     # get dict from mysql 
     'cursorclass': pymysql.cursors.DictCursor
