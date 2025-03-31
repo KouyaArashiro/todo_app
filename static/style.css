@@ -1,8 +1,31 @@
-body {
-    font-family: sans-serif;
-    padding: 20px;
+.todo-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
-input, button {
-    padding: 8px;
-    margin: 5px;
+
+.todo-input-wrapper button {
+    padding: 0.1em;
+    width: 10vw;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+
+#todo-input {
+    width: 50vw;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+#todo-list li a + a{
+    margin: 0.1em 0.5em;
+}
+
+#todo-list li, span{
+    margin: 0.2em;
+}
+input {
+    margin: 0 0;
 }

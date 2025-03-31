@@ -46,12 +46,12 @@ function loadTodos() {
 
             const editBtn = document.createElement("a");
             editBtn.href = "#";
-            editBtn.textContent = " [編集] ";
+            editBtn.textContent = "  [編集]  ";
             editBtn.onclick = () => editTodo(item.id, item.todo);
 
             const deleteBtn = document.createElement("a");
             deleteBtn.href = "#";
-            deleteBtn.textContent = " [削除] ";
+            deleteBtn.textContent = "  [削除]  ";
             deleteBtn.onclick = () => deleteTodo(item.id);
 
             li.appendChild(span);
